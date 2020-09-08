@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Picker</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td colspan="3">
+                <h1>Pizza</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="./img/1.jpg" alt="">
+                <p>Pizza Name 1</p>
+                <strong>$8</strong>
+                <div class="checkboxgroup">
+                    <input type="radio" id="pizzaOne" name="pizza" value="8" />
+                </div>
+            </td>
+            <td>
+                <img src="./img/1.jpg" alt="">
+                <p>Pizza Name 2</p>
+                <strong>$10</strong>
+                <div class="checkboxgroup">
+                    <input type="radio" id="pizzaTwo" name="pizza" value="10" />
+                </div>
+            </td>
+            <td>
+                <img src="./img/1.jpg" alt="">
+                <p>Pizza Name 3</p>
+                <strong>$12</strong>
+                <div class="checkboxgroup">
+                    <input type="radio" id="pizzaThree" name="pizza" value="12" />
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <h1>Size</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="checkboxgroup">
+                    <input type="radio" name="size" id="sizeSmall" value="-1" />
+                    <label for="sizeSmall">Small</label>
+                </div>
+            </td>
+            <td>
+                <div class="checkboxgroup">
+                    <input type="radio" name="size" id="sizeMedium" value="0" />
+                    <label for="sizeMedium">Medium</label>
+                </div>
+            </td>
+            <td>
+                <div class="checkboxgroup radio">
+                    <input type="radio" name="size" id="sizeLarge" value="2" />
+                    <label for="sizeLarge">Large</label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <h1>Toppings</h1>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="toppings" id="avocado" value="1" disabled>
+                <label for="avocado">Avocado</label>
+            </td>
+            <td>
+                <input type="checkbox" name="toppings" id="lobster" value="2" disabled <label
+                    for="lobster">Lobster</label>
+            </td>
+            <td>
+                <input type="checkbox" name="toppings" id="bacon" value="3" disabled>
+                <label for="bacon">Bacon</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="toppings" id="broccoli" value="1" disabled>
+                <label for="broccoli">Broccoli</label>
+            </td>
+            <td>
+                <input type="checkbox" name="toppings" id="oyster" value="2" disabled <label for="oyster">Oyster</label>
+            </td>
+            <td>
+                <input type="checkbox" name="toppings" id="duck" value="3" disabled>
+                <label for="duck">Duck</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="toppings" id="onion" value="1" disabled>
+                <label for="onion">Onion</label>
+            </td>
+            <td>
+                <input type="checkbox" name="toppings" id="salmon" value="2" disabled <label for="salmon">Salmon</label>
+            </td>
+            <td>
+                <input type="checkbox" name="toppings" id="ham" value="3" disabled>
+                <label for="ham">Ham</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="toppings" id="zucchini" value="1" disabled>
+                <label for="zucchini">Zucchini</label>
+            </td>
+            <td>
+                <input type="checkbox" name="toppings" id="tuna" value="2" disabled>
+                <label for="tuna">Tuna</label>
+            </td>
+            <td>
+                <input type="checkbox" name="toppings" id="sausage" value="3" disabled>
+                <label for="sausage">Sausage</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <h1>Total</h1>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <h2>$ <span id="totalPrice">0</span></h2>
+            </td>
+        </tr>
+    </table>
+
+
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
