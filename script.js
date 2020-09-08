@@ -84,6 +84,8 @@ toppingsType.forEach((topping) =>
     topping.addEventListener("change", function () {
         if (topping.checked) {
             pizza.toppings.push(parseInt(topping.value));
+        } else {
+            pizza.toppings.pop(parseInt(topping.value));
         }
         document.getElementById("totalPrice").innerHTML = pizza.countTotal();
     })
